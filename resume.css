@@ -1,0 +1,81 @@
+@import url('main.css');
+
+.resume-content {
+    padding: 40px;
+    text-align: center;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/background.jpg') center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(44, 62, 80, 0.8);
+    color: #fff;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.contact-link {
+    text-decoration: none;
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+.contact-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+}
+p {
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        width: 100%;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
